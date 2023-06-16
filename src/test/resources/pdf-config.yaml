@@ -1,0 +1,68 @@
+passColor: 3cb500
+failColor: ff0000
+skipColor: ffba01
+displayFeature: true
+displayScenario: true
+displayDetailed: true
+displayAttached: true
+displayExpanded: true
+
+dashboardConfig:
+  title: CIAM/SGO Automation PDF Report
+  dataBackgroundColor: 4F0CC8
+  titleColor: FF0000
+  dateColor: 8400db
+  timeColor: 000000
+  dial:
+    featureRanges: 60 95
+    scenarioRanges: 70 90
+    stepRanges: 75 85
+    badColor: ff0000
+    averageColor: ffba01
+    goodColor: 3cb500
+
+summaryConfig:
+  totalColor: FF0000
+  durationColor: FF0000
+
+tagConfig:
+  totalColor: FF0000
+
+featureConfig:
+  totalColor: FF0000
+  durationColor: FF0000
+
+scenarioConfig:
+  totalColor: FF0000
+  durationColor: FF0000
+
+detailedFeatureConfig:
+  featureNameColor: FF0000
+  startEndTimeColor: 000000
+  tagColor: 404040
+  dataHeaderColor: FFFFFF
+  dataBackgroundColor: 404040
+  totalColor: FFFFFF
+  durationColor: FFFFFF
+  durationBackgroundColor: 404040
+
+detailedScenarioConfig:
+  featureNameColor: 404040
+  scenarioNameColor: FF0000
+  startEndTimeColor: 000000
+  tagColor: 404040
+  dataHeaderColor: FFFFFF
+  dataBackgroundColor: 404040
+  totalColor: FFFFFF
+  durationColor: FFFFFF
+  durationBackgroundColor: 404040
+  stepChartBarColor: 800080
+
+detailedStepHookConfig:
+  stepTextColor: 3cb500
+  stepBackgroundColor: DFDFDF
+  hookTextColor: 3cb500
+  hookBackgroundColor: FFFFFF
+  durationColor: FF0000
+  errorMsgColor: FF0000
+  logMsgColor: 006aca

@@ -1,0 +1,20 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< org.example:ciam-sgo-automation-demo >----------------
+[INFO] Building ciam-sgo-automation-demo 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/messages/maven-metadata.xml
+Progress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/messages/maven-metadata.xml (2.3 kB at 3.8 kB/s)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ ciam-sgo-automation-demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /data/automationFiles/ciamsgo-cucumber-test-framework/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ ciam-sgo-automation-demo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.152 s
+[INFO] Finished at: 2022-11-04T03:30:12Z
+[INFO] ------------------------------------------------------------------------

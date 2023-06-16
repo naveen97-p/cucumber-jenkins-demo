@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Author :
+# Description : This script starts execution of automation testing
+
+echo “Starting script execution…..
+Time = `date +%T`
+
+echo “The time is: ” $Time
+
+today = `date +%m-%Y`
+
+echo $today
+
+mvn compile
+sleep 10
+mvn clean test -Dtest=TestRunner.Retail.JunitRunnerForRetailApp

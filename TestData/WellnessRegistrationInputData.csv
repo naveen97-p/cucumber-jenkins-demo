@@ -1,0 +1,92 @@
+RoleType, email, FirstName, LastName, UserName, TermsAndConditions, ReceiveEmailsDecision
+Patient,majormovie2@mailinator.com,majormovie,test,majormovie2,true,NO
+Patient,majormovie3@mailinator.com,majormovie,test,majormovie4,true,NO
+Patient,majormovie8@mailinator.com,majormovie,test,majormovie8,true,NO
+Patient,majormovie2@mailinator.com,majormovie,test,majormovie2,true,NO
+Doctor,nopainnogain2@mailinator.com,nopain,nogain,nopainnogain2,true,NO
+Partner User,usefuluser@mailinator.com,useful,user,usefuluser,true,NO
+Partner Admin,msdhoni@yahoo.com,msdhoni,cricketer,msdhoni,true,NO
+App Admin,automationmail@gmail.com,google,test,automationmail,true,NO
+Doctor,doctorcheck1@mailinator.com,naveen,kumar,doctorcheck1,true,NO
+Partner User,partnerusercheck1@mailinator.com,naveen,kumar,partnerusercheck1,true,NO
+Partner Admin,partneradmincheck1@mailinator.com,naveen,kumar,partneradmincheck1,true,NO
+App Admin,appadmin1@mailinator.com,naveen,kumar,appadmin1,true,NO
+Patient,majormovie10@mailinator.com,majormovie,test,majormovie8,true,NO
+Doctor,majormovie4@mailinator.com,majormovie,test,majormovie4,true,NO
+Partner User,majormovie5@mailinator.com,majormovie,test,majormovie5,true,NO
+Partner Admin,majormovie6@mailinator.com,majormovie,test,majormovie6,true,NO
+App Admin,majormovie7@mailinator.com,majormovie,test,majormovie7,true,NO
+Patient,majormovie11@mailinator.com,majormovie,test,majormovie11,true,NO
+Doctor,doctorcheck12@mailinator.com,naveen,kumar,doctorcheck12,true,NO
+Patient,majormovie13@mailinator.com,majormovie,test,majormovie13,true,NO
+Doctor,majormovie14@mailinator.com,majormovie,test,majormovie14,true,NO
+Partner User,majormovie15@mailinator.com,majormovie,test,majormovie15,true,NO
+Partner Admin,majormovie16@mailinator.com,majormovie,test,majormovie16,true,NO
+App Admin,majormovie17@mailinator.com,majormovie,test,majormovie17,true,NO
+Patient,majormovie23@mailinator.com,majormovie,test,majormovie23,true,NO
+Doctor,doctorcheck22@mailinator.com,naveen,kumar,doctorcheck22,true,NO
+Patient,majormovie21@mailinator.com,majormovie,test,majormovie21,true,NO
+Doctor,majormovie20@mailinator.com,majormovie,test,majormovie20,true,NO
+Partner User,majormovie19@mailinator.com,majormovie,test,majormovie19,true,NO
+Partner Admin,majormovie16@mailinator.com,majormovie,test,majormovie16,true,NO
+App Admin,majormovie18@mailinator.com,majormovie,test,majormovie18,true,NO
+Patient,majormovie25@mailinator.com,majormovie,test,majormovie25,true,NO
+Doctor,doctorcheck26@mailinator.com,naveen,kumar,doctorcheck26,true,NO
+Patient,majormovie27@mailinator.com,majormovie,test,majormovie27,true,NO
+Partner User,majormovie29@mailinator.com,majormovie,test,majormovie29,true,NO
+Partner Admin,majormovie30@mailinator.com,majormovie,test,majormovie30,true,NO
+App Admin,majormovie31@mailinator.com,majormovie,test,majormovie31,true,NO
+Patient,majormovie36@mailinator.com,majormovie,test,majormovie36,true,NO
+Doctor,doctorcheck29@mailinator.com,naveen,kumar,doctorcheck29,true,NO
+Patient,majormovie30@mailinator.com,majormovie,test,majormovie30,true,NO
+Doctor,majormovie35@mailinator.com,majormovie,test,majormovie35,true,NO
+Partner User,majormovie32@mailinator.com,majormovie,test,majormovie32,true,NO
+Partner Admin,majormovie33@mailinator.com,majormovie,test,majormovie33,true,NO
+App Admin,majormovie34@mailinator.com,majormovie,test,majormovie34,true,NO
+Patient,majormovie43@mailinator.com,majormovie,test,majormovie43,true,NO
+Patient,majormovie41@mailinator.com,majormovie,test,majormovie41,true,NO
+Doctor,majormovie42@mailinator.com,majormovie,test,majormovie42,true,NO
+Patient,majormovie45@mailinator.com,majormovie,test,majormovie45,true,NO
+Doctor,doctorcheck46@mailinator.com,naveen,kumar,doctorcheck46,true,NO
+Patient,majormovie47@mailinator.com,majormovie,test,majormovie47,true,NO
+Doctor,majormovie48@mailinator.com,majormovie,test,majormovie48,true,NO
+Patient,healthreg700@mailinator.com,health,registration,healthreg700,true,NO
+Doctor,doctorcheck47@mailinator.com,doctor,registration,doctorcheck47,true,NO
+Patient,healthreg800@mailinator.com,health,registration,healthreg800,true,NO
+Doctor,healthreg801@mailinator.com,health,registration,healthreg801,true,NO
+Patient,healthreg701@mailinator.com,health,registration,healthreg701,true,NO
+Doctor,doctorcheck048@mailinator.com,doctor,registration,doctorcheck048,true,NO
+Patient,healthreg0801@mailinator.com,health,registration,healthreg0801,true,NO
+Doctor,healthreg0802@mailinator.com,health,registration,healthreg0802,true,NO
+Patient,healthreg701@mailinator.com,health,registration,healthreg701,true,NO
+Doctor,doctorcheck048@mailinator.com,doctor,registration,doctorcheck048,true,NO
+Patient,healthreg0801@mailinator.com,health,registration,healthreg0801,true,NO
+Doctor,healthreg0802@mailinator.com,health,registration,healthreg0802,true,NO
+Patient,healthregtest701@mailinator.com,health,registration,healthregtest701,true,NO
+Doctor,doctorchecktest048@mailinator.com,doctor,registration,doctorchecktest048,true,NO
+Patient,healthregtest0802@mailinator.com,health,registration,healthregtest0802,true,NO
+Doctor,healthregtest0803@mailinator.com,health,registration,healthregtest0803,true,NO
+Patient,healthdemopatientregister9@mailinator.com,health,registration,healthdemopatientregister9,true,NO
+Doctor,healthdemodoctorregister10@mailinator.com,health,registration,healthdemodoctorregister10,true,NO
+Patient,healthdemoregister11@mailinator.com,health,registration,healthdemoregister11,true,NO
+Doctor,healthdemoregister12@mailinator.com,health,registration,healthdemoregister12,true,NO
+Patient,healthdemopatientregister13@mailinator.com,health,registration,healthdemopatientregister13,true,NO
+Doctor,healthdemodoctorregister14@mailinator.com,health,registration,healthdemodoctorregister14,true,NO
+Patient,healthdemoregister15@mailinator.com,health,registration,healthdemoregister15,true,NO
+Doctor,healthdemoregister16@mailinator.com,health,registration,healthdemoregister16,true,NO
+Patient,healthdemopatientregister17@mailinator.com,health,registration,healthdemopatientregister17,true,NO
+Doctor,healthdemodoctorregister18@mailinator.com,health,registration,healthdemodoctorregister18,true,NO
+Patient,healthdemoregister19@mailinator.com,health,registration,healthdemoregister19,true,NO
+Doctor,healthdemoregister20@mailinator.com,health,registration,healthdemoregister20,true,NO
+Patient,healthdemopatientregister21@mailinator.com,health,registration,healthdemopatientregister21,true,NO
+Doctor,healthdemodoctorregister22@mailinator.com,health,registration,healthdemodoctorregister22,true,NO
+Patient,healthdemoregister23@mailinator.com,health,registration,healthdemoregister23,true,NO
+Doctor,healthdemoregister24@mailinator.com,health,registration,healthdemoregister24,true,NO
+Patient,healthdemopatientregister25@mailinator.com,health,registration,healthdemopatientregister25,true,NO
+Doctor,healthdemodoctorregister26@mailinator.com,health,registration,healthdemodoctorregister26,true,NO
+Patient,healthdemoregister27@mailinator.com,health,registration,healthdemoregister27,true,NO
+Doctor,healthdemoregister28@mailinator.com,health,registration,healthdemoregister28,true,NO
+Patient,healthdemopatientregister29@mailinator.com,health,registration,healthdemopatientregister29,true,NO
+Doctor,healthdemodoctorregister30@mailinator.com,health,registration,healthdemodoctorregister30,true,NO
+Patient,healthdemoregister31@mailinator.com,health,registration,healthdemoregister31,true,NO
+Doctor,healthdemoregister32@mailinator.com,health,registration,healthdemoregister32,true,NO

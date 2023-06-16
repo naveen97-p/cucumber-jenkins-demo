@@ -1,0 +1,1584 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 3, 2022 11:55:10 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@pay-a-bill-make-another-payment-valid</a><a class="dropdown-item" href="#">@US06</a><a class="dropdown-item" href="#">@pay-a-bill-invalid</a><a class="dropdown-item" href="#">@pay-a-bill-utilities</a><a class="dropdown-item" href="#">@pay-a-bill-dashboard</a><a class="dropdown-item" href="#">@new-bank</a><a class="dropdown-item" href="#">@US05</a><a class="dropdown-item" href="#">@pay-a-bill-make-a-payment-valid</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">New_Bank_US04 Utilities/Pay a Bill Test</p>
+            <p class="text-sm">
+              <span>11:55:12 am</span> / <span>00:02:25:665</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">New_Bank_US04 Utilities/Pay a Bill Test</h5>
+<span class='badge badge-success'>11.03.2022 11:55:12 am</span>
+<span class='badge badge-danger'>11.03.2022 11:57:38 am</span>
+<span class='badge badge-default'>00:02:25:665</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Setup the Test Environment as "CHROME" and User opens the given URL "NEW_BANK"</span>
+      <div>User has opened the link:https://bank.ciam.sandbox.ciamsgo.com/ on CHROME browser.
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides access token to Deloitte security page for New Banking App</span>
+      <div>User is clicked on AccessThroughEntryToken
+      </div>
+      <div>User has provided Access Token
+      </div>
+      <div>User has received the Access to Deloitte
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User verifies the new bank site is accessible</span>
+      <div>New Bank Page has been appeared as expected
+      </div>
+      <div>Page URl is appeared as expected, URL:https://bank.ciam.sandbox.ciamsgo.com/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User waits until the login section appears for new Bank app</span>
+      <div>Login Section has appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides "newbankregistrationviaemail16" and  password for new bank app - static</span>
+      <div>User has provided username
+      </div>
+      <div>User has provided password
+      </div>
+      <div>User has clicked on Sign-On button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should able to login with "automation" and land on dashboard of new Bank app "positive"</span>
+      <div>User is registered an account on new Bank app and Firstname is appeared as expected
+      </div>
+      <div>Dashboard page URL is verified
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on utilities option on dashboard page of new Bank app</span>
+      <div>User has clicked on Utilities option link on dashboard
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User provides the details of payments like "Verizon", "My Credit Card", "500.98" and click on confirm payment</span>
+      <div>User has landed on Payments/Utilities page
+      </div>
+      <div>Utilities page URL has been verified
+      </div>
+      <div>User has selected a service provider
+      </div>
+      <div>User has selected account type
+      </div>
+      <div>User has provided the amount to transfer
+      </div>
+      <div>User has clicked on Confirm Payment button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User gets the verification code and verify the QR code page UI text</span>
+      <div>QR Code Section has been appeared
+      </div>
+      <div>QR page URL has been verified
+      </div>
+      <div>Verification Code has been generated. CODE:244353
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs out from new Bank app "positive"</span>
+      <div>User has clicked on Logout arrow button
+      </div>
+      <div>User has clicked on Logout button
+      </div>
+      <div>User has successfully logged-out from the new bank app and landed on welcome page
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User terminates all windows of the browser</span>
+      <div>All windows have been terminated by the User
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Setup the Test Environment as "CHROME" and User opens the given URL "NEW_BANK"</span>
+      <div>User has opened the link:https://bank.ciam.sandbox.ciamsgo.com/ on CHROME browser.
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides access token to Deloitte security page for New Banking App</span>
+      <div>User is clicked on AccessThroughEntryToken
+      </div>
+      <div>User has provided Access Token
+      </div>
+      <div>User has received the Access to Deloitte
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User verifies the new bank site is accessible</span>
+      <div>New Bank Page has been appeared as expected
+      </div>
+      <div>Page URl is appeared as expected, URL:https://bank.ciam.sandbox.ciamsgo.com/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User waits until the login section appears for new Bank app</span>
+      <div>Login Section has appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides "newbankregistrationviaemail16" and  password for new bank app - static</span>
+      <div>User has provided username
+      </div>
+      <div>User has provided password
+      </div>
+      <div>User has clicked on Sign-On button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should able to login with "automation" and land on dashboard of new Bank app "positive"</span>
+      <div>User is registered an account on new Bank app and Firstname is appeared as expected
+      </div>
+      <div>Dashboard page URL is verified
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on pay a bill option on dashboard page of new Bank app</span>
+      <div>User has clicked on Pay A Bill option link on dashboard
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User provides the details of payments like "Alliant Gas", "My Savings Account", "100" and click on confirm payment</span>
+      <div>User has landed on Payments/Utilities page
+      </div>
+      <div>Utilities page URL has been verified
+      </div>
+      <div>User has selected a service provider
+      </div>
+      <div>User has selected account type
+      </div>
+      <div>User has provided the amount to transfer
+      </div>
+      <div>User has clicked on Confirm Payment button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User gets the verification code and verify the QR code page UI text</span>
+      <div>QR Code Section has been appeared
+      </div>
+      <div>QR page URL has been verified
+      </div>
+      <div>Verification Code has been generated. CODE:286429
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs out from new Bank app "positive"</span>
+      <div>User has clicked on Logout arrow button
+      </div>
+      <div>User has clicked on Logout button
+      </div>
+      <div>User has successfully logged-out from the new bank app and landed on welcome page
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User terminates all windows of the browser</span>
+      <div>All windows have been terminated by the User
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="140"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">New_Bank_US04 Transfer/Send Money Test</p>
+            <p class="text-sm">
+              <span>11:57:38 am</span> / <span>00:03:35:249</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">New_Bank_US04 Transfer/Send Money Test</h5>
+<span class='badge badge-success'>11.03.2022 11:57:38 am</span>
+<span class='badge badge-danger'>11.03.2022 12:01:13 pm</span>
+<span class='badge badge-default'>00:03:35:249</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=140</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="141"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to Transfer or send money</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="142"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to Transfer or send money</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Setup the Test Environment as "CHROME" and User opens the given URL "NEW_BANK"</span>
+      <div>User has opened the link:https://bank.ciam.sandbox.ciamsgo.com/ on CHROME browser.
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides access token to Deloitte security page for New Banking App</span>
+      <div>User is clicked on AccessThroughEntryToken
+      </div>
+      <div>User has provided Access Token
+      </div>
+      <div>User has received the Access to Deloitte
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User verifies the new bank site is accessible</span>
+      <div>New Bank Page has been appeared as expected
+      </div>
+      <div>Page URl is appeared as expected, URL:https://bank.ciam.sandbox.ciamsgo.com/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User waits until the login section appears for new Bank app</span>
+      <div>Login Section has appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides "newbankregistrationviaemail16" and  password for new bank app - static</span>
+      <div>User has provided username
+      </div>
+      <div>User has provided password
+      </div>
+      <div>User has clicked on Sign-On button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should able to login with "automation" and land on dashboard of new Bank app "positive"</span>
+      <div>User is registered an account on new Bank app and Firstname is appeared as expected
+      </div>
+      <div>Dashboard page URL is verified
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on transfer option on dashboard page of new Bank app</span>
+      <div>User has clicked on Transfer option link on dashboard
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on make a new payment button</span>
+      <div>Transfer Page has been appeared
+      </div>
+      <div>User has clicked on make a new payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides the transfer details like "Automation User", "123", "123", "500", "positive" and click on continue</span>
+      <div>User has landed on Send Money page
+      </div>
+      <div>User has provided PayeeName
+      </div>
+      <div>User has provided AccountNumber
+      </div>
+      <div>User has provided ConfirmAccountNumber
+      </div>
+      <div>User has provided Transfer Amount
+      </div>
+      <div>User has clicked on Confirm Payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User confirms the transaction risk</span>
+      <div>Transaction Risk Page has been appeared
+      </div>
+      <div>User has clicked on Transaction Risk Continue Button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User gets the Success message for the transaction</span>
+      <div>Success Message has been appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs out from new Bank app "positive"</span>
+      <div>User has clicked on Logout arrow button
+      </div>
+      <div>User has clicked on Logout button
+      </div>
+      <div>User has successfully logged-out from the new bank app and landed on welcome page
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User terminates all windows of the browser</span>
+      <div>All windows have been terminated by the User
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="212"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to make another payment again</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="213"><span class="badge log pass-bg mr-2">Pass</span>US04-01 New_Bank: User can able to make another payment again</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Setup the Test Environment as "CHROME" and User opens the given URL "NEW_BANK"</span>
+      <div>User has opened the link:https://bank.ciam.sandbox.ciamsgo.com/ on CHROME browser.
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides access token to Deloitte security page for New Banking App</span>
+      <div>User is clicked on AccessThroughEntryToken
+      </div>
+      <div>User has provided Access Token
+      </div>
+      <div>User has received the Access to Deloitte
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User verifies the new bank site is accessible</span>
+      <div>New Bank Page has been appeared as expected
+      </div>
+      <div>Page URl is appeared as expected, URL:https://bank.ciam.sandbox.ciamsgo.com/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User waits until the login section appears for new Bank app</span>
+      <div>Login Section has appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides "newbankregistrationviaemail16" and  password for new bank app - static</span>
+      <div>User has provided username
+      </div>
+      <div>User has provided password
+      </div>
+      <div>User has clicked on Sign-On button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should able to login with "automation" and land on dashboard of new Bank app "positive"</span>
+      <div>User is registered an account on new Bank app and Firstname is appeared as expected
+      </div>
+      <div>Dashboard page URL is verified
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on transfer option on dashboard page of new Bank app</span>
+      <div>User has clicked on Transfer option link on dashboard
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on make a new payment button</span>
+      <div>Transfer Page has been appeared
+      </div>
+      <div>User has clicked on make a new payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides the transfer details like "Automation User", "123123", "123123", "500", "positive" and click on continue</span>
+      <div>User has landed on Send Money page
+      </div>
+      <div>User has provided PayeeName
+      </div>
+      <div>User has provided AccountNumber
+      </div>
+      <div>User has provided ConfirmAccountNumber
+      </div>
+      <div>User has provided Transfer Amount
+      </div>
+      <div>User has clicked on Confirm Payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User confirms the transaction risk</span>
+      <div>Transaction Risk Page has been appeared
+      </div>
+      <div>User has clicked on Transaction Risk Continue Button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User gets the Success message for the transaction</span>
+      <div>Success Message has been appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on make another payment</span>
+      <div>User has clicked on make another payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on make a new payment button</span>
+      <div>Transfer Page has been appeared
+      </div>
+      <div>User has clicked on make a new payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides the transfer details like "Automation User", "123123", "123123", "500", "positive" and click on continue</span>
+      <div>User has landed on Send Money page
+      </div>
+      <div>User has provided PayeeName
+      </div>
+      <div>User has provided AccountNumber
+      </div>
+      <div>User has provided ConfirmAccountNumber
+      </div>
+      <div>User has provided Transfer Amount
+      </div>
+      <div>User has clicked on Confirm Payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User confirms the transaction risk</span>
+      <div>Transaction Risk Page has been appeared
+      </div>
+      <div>User has clicked on Transaction Risk Continue Button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User gets the Success message for the transaction</span>
+      <div>Success Message has been appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs out from new Bank app "positive"</span>
+      <div>User has clicked on Logout arrow button
+      </div>
+      <div>User has clicked on Logout button
+      </div>
+      <div>User has successfully logged-out from the new bank app and landed on welcome page
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User terminates all windows of the browser</span>
+      <div>All windows have been terminated by the User
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="288"><span class="badge log pass-bg mr-2">Pass</span>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="289"><span class="badge log pass-bg mr-2">Pass</span>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Setup the Test Environment as "CHROME" and User opens the given URL "NEW_BANK"</span>
+      <div>User has opened the link:https://bank.ciam.sandbox.ciamsgo.com/ on CHROME browser.
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides access token to Deloitte security page for New Banking App</span>
+      <div>User is clicked on AccessThroughEntryToken
+      </div>
+      <div>User has provided Access Token
+      </div>
+      <div>User has received the Access to Deloitte
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User verifies the new bank site is accessible</span>
+      <div>New Bank Page has been appeared as expected
+      </div>
+      <div>Page URl is appeared as expected, URL:https://bank.ciam.sandbox.ciamsgo.com/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User waits until the login section appears for new Bank app</span>
+      <div>Login Section has appeared
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides "newbankregistrationviaemail16" and  password for new bank app - static</span>
+      <div>User has provided username
+      </div>
+      <div>User has provided password
+      </div>
+      <div>User has clicked on Sign-On button
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should able to login with "automation" and land on dashboard of new Bank app "negative"</span>
+      <div>Skipping the Test as it falls under Negative testing
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on transfer option on dashboard page of new Bank app</span>
+      <div>User has clicked on Transfer option link on dashboard
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on make a new payment button</span>
+      <div>Transfer Page has been appeared
+      </div>
+      <div>User has clicked on make a new payment
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides the transfer details like "Automation User", "123123", "123125", "500", "negative" and click on continue</span>
+      <div>User has landed on Send Money page
+      </div>
+      <div>User has provided PayeeName
+      </div>
+      <div>User has provided AccountNumber
+      </div>
+      <div>User has provided different ConfirmAccountNumber
+      </div>
+      <div>User has provided Transfer Amount
+      </div>
+      <div>User has clicked on Confirm Payment
+      </div>
+      <div>Payee Account Number and Confirm Payee Account Number should be matched verification has been done
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs out from new Bank app "negative"</span>
+      <div>Skipping the Test as it falls under Negative testing
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User terminates all windows of the browser</span>
+      <div>All windows have been terminated by the User
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pay-a-bill-make-another-payment-valid</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pay-a-bill-make-another-payment-valid</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:47 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='212'>US04-01 New_Bank: User can able to make another payment again</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to make another payment again</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:47 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='213'>US04-01 New_Bank: User can able to make another payment again</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to make another payment again</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@US06</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US06</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:38 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='141'>US04-01 New_Bank: User can able to Transfer or send money</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to Transfer or send money</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:38 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='142'>US04-01 New_Bank: User can able to Transfer or send money</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to Transfer or send money</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:47 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='212'>US04-01 New_Bank: User can able to make another payment again</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to make another payment again</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:47 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='213'>US04-01 New_Bank: User can able to make another payment again</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to make another payment again</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='140' id='288'>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='140' id='289'>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pay-a-bill-invalid</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pay-a-bill-invalid</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='140' id='288'>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='140' id='289'>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pay-a-bill-utilities</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pay-a-bill-utilities</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pay-a-bill-dashboard</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pay-a-bill-dashboard</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='71'>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">@new-bank</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@new-bank</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='71'>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:38 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='141'>US04-01 New_Bank: User can able to Transfer or send money</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to Transfer or send money</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:38 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='142'>US04-01 New_Bank: User can able to Transfer or send money</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to Transfer or send money</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:47 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='212'>US04-01 New_Bank: User can able to make another payment again</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to make another payment again</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:47 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='213'>US04-01 New_Bank: User can able to make another payment again</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to make another payment again</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='140' id='288'>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='140' id='289'>US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-02 New_Bank: User cannot able to Transfer or send money if User doesn't provide the same PayeeAccount Number and ConfirmPayeeAccount Number</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@US05</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US05</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on utilities option</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='71'>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Utilities/Pay a Bill Test.US04-01 New_Bank: User can able to pay a bill via payment link on dashboard</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pay-a-bill-make-a-payment-valid</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pay-a-bill-make-a-payment-valid</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:38 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='141'>US04-01 New_Bank: User can able to Transfer or send money</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to Transfer or send money</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:38 am</td>
+<td>
+<a href="#" class="linked" test-id='140' id='142'>US04-01 New_Bank: User can able to Transfer or send money</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US04 Transfer/Send Money Test.US04-01 New_Bank: User can able to Transfer or send money</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 3, 2022 11:55:10 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 3, 2022 12:01:13 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>5</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>64</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"New_Bank_US04 Utilities/Pay a Bill Test":145.665,"New_Bank_US04 Transfer/Send Money Test":215.249
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@pay-a-bill-make-another-payment-valid</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US06</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pay-a-bill-invalid</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pay-a-bill-utilities</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pay-a-bill-dashboard</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@new-bank</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US05</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pay-a-bill-make-a-payment-valid</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 5,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 64,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

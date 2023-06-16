@@ -1,0 +1,96 @@
+#!/bin/sh
+
+# Author :
+# Description : This script starts execution of automation testing
+#PATH=$PATH:/data/maven/bin
+#export $PATH
+EXEC_PATH=/data/automationFiles/ciamsgo-dev-and-demo-regression-suite
+COMPILE_CMD="mvn compile"
+APP_NAME="TestRunner.Retail.Dev.JunitRunnerForRetailApp"
+TEST_CMD="mvn clean test -Dtest="$APP_NAME
+:'
+######E-MAIL Variables######
+
+TO="noreply@ciamsgo.com"
+FROM="rakshith@mailinator.com"
+SUCCESSSUBJECT="Testing passed"
+FAILURESUBJECT="Testing failed check the report"
+SUCCESSMESSAGE="<B>Test Successful</B><br /> test passed"
+FAILEDMESSAGE="<B>Test failed</B><br /> test failed"
+
+
+date="$(date -R)"
+access_key="AKIA3SNNKKOHQ2Q5O7Z6"
+priv_key="BFpmQD+NnGt8A4D4L/7ilC4QMniEzNdNd4cpT2RdGvCM"
+signature="$(echo -n "$date" | openssl dgst -sha256 -hmac "$priv_key" -binary | base64 -w 0)"
+auth_header="X-Amzn-Authorization: AWS3-HTTPS AWSAccessKeyId=$access_key, Algorithm=HmacSHA256, Signature=$signature"
+endpoint="http://email-smtp.us-east-2.amazonaws.com:587"
+content_type="Content-Type: text/html"
+mime_version="MIME-Version: 1.0"
+action="Action=SendEmail"
+source="Source=$FROM"
+to="Destination.ToAddresses.member.1=$TO"
+successSubject="Message.Subject.Data=$SUCCESSSUBJECT"
+successMessage="Message.Body.text.Data=$SUCCESSMESSAGE"
+failedSubject="Message.Subject.Data=$FAILURESUBJECT"
+failedMessage="Message.Body.text.Data=$FAILEDMESSAGE"'
+
+echo "Starting maven complie"
+#sleep 300
+#mvn compile >/data/automationFiles/ciamsgo-cucumber-test-framework/mvnCompileOutput.txt
+$COMPILE_CMD > mvnCompileOutput.txt
+:'sleep 100 &
+wait -n'
+buildCompileStatus=`grep -i "BUILD SUCCESS" mvnCompileOutput.txt | cut -d' ' -f2-`
+echo "Maven compile status is $buildCompileStatus"
+
+if [ "$buildCompileStatus" == "BUILD SUCCESS" ]; then
+        {
+                echo " Maven compile was successful"
+                echo "Starting test for $TEST_CMD"
+                #$TEST_CMD  > mvnTestOutput.txt
+                mvn clean test -Dtest=TestRunner.Retail.Dev.JunitRunnerForRetailApp > mvnTestOutput.txt
+                #sleep 100 &
+                #wait -n
+                #sleep 100 &
+                #wait -n
+                buildiTestStatus=`grep -i "BUILD SUCCESS" mvnTestOutput.txt | cut -d' ' -f2-`
+                #sleep 100 &
+                #wait -n
+                $buildiTestStatus
+                echo "Build status is $buildTestStatus"
+                if [ "$buildTestStatus" == "BUILD SUCCESS" ]; then
+                {
+                        echo "Build is successful"
+                        latestDir=`cd /data/automationFiles/ciamsgo-cucumber-test-framework/output/ && ls -td -- */ | head -n 1 | cut -d'/' -f1`
+                        echo " cmd output is "\"$latestDir"\""
+                        copyCmd=`cp "/data/automationFiles/ciamsgo-cucumber-test-framework/output/$latestDir/ExtentPdfReport/ExtentPdf.pdf" /home/svc_iamadmin`
+                        $copyCmd
+                        #curl -v -X POST -H "$auth_header" -H "Date: $date" -H "$content_type" -H "$mime_version" -H "Content-Length: 50" --data-urlencode "$successMessage" --data-urlencode "$to" --data-urlencode "$source" --data-urlencode "$action" --data-urlencode "$successSubject"  "$endpoint"
+                }
+                else
+                                {
+                                        echo "Build was not successful"
+                                        #curl -v -X POST -H "$auth_header" -H "Date: $date" -H "$content_type" -H "$mime_version" -H "Content-Length: 50" --data-urlencode "$failedMessage" --data-urlencode "$to" --data-urlencode "$source" --data-urlencode "$action" --data-urlencode "$failedSubject"  "$endpoint"
+                                }
+                                fi
+                        }
+                else
+                        {
+                                echo "Maven complie was unsuccessful"
+                        }
+                fi
+                countFiles=`find /data/automationFiles/ciamsgo-cucumber-test-framework/output/* -type d -mtime +15 | wc -l`
+                echo "The count is $countFiles"
+
+                if [ "$countFiles" -gt 0 ]; then
+                        {
+                                echo "Deleteing files"
+                                deleteFiles=`find /data/automationFiles/ciamsgo-cucumber-test-framework/output/* -type d -mtime +15 -exec rm -rf {} \;`
+                                $deleteFiles
+                        }
+                else
+                        {
+                                echo "No Files to delete"
+                        }
+                fi

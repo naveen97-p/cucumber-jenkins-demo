@@ -1,0 +1,41 @@
+package StepDefinitions.Health;
+
+import Utilities.BrowserInstance;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+
+public class HealthConfigureRegistrationSD extends BrowserInstance {
+
+    private Scenario scenario;
+
+    public void prepareFailureEvidence(String errorMessage){
+        scenario.attach(captureScreen.takeScreenShot(),"image/png",errorMessage);
+    }
+
+    @Before
+    public void beforeTest(Scenario scenario){
+        this.scenario = scenario;
+    }
+
+    @After
+    public void testScenarioCondition(){
+        if (scenario.isFailed()){
+            prepareFailureEvidence("Above scenario has been failed. Ref: Attachment");
+            scenario.log("PageURL: "+driver.getCurrentUrl());
+            scenario.log("Terminated the browser as a failure noticed in above scenario");
+            driver.quit();
+        }
+    }
+
+    @And("User would like to configure as Skip For Now button and submit")
+    public void userWouldLikeToConfigureAsSkipForNowButtonAndSubmit() {
+        waitUtil.elementToBeLocated(healthConfigureRegistrationPage.wouldYouLikeToConfigureRefXpath);
+        healthConfigureRegistrationPage.clickOnSkipForNow();
+        scenario.log("User has clicked on Skip For Now Configure button for Registration");
+        healthConfigureRegistrationPage.clickOnSubmitButton();
+        scenario.log("User has clicked on Submit button");
+    }
+
+}

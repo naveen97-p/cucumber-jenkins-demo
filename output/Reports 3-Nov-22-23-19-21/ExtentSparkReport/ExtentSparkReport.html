@@ -1,0 +1,1931 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 3, 2022 11:19:21 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@US09</a><a class="dropdown-item" href="#">@add-and-delete-email-mfa</a><a class="dropdown-item" href="#">@new-bank</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">New_Bank_US09 09 MyDevices Test</p>
+            <p class="text-sm">
+              <span>11:19:23 pm</span> / <span>00:01:23:808</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">New_Bank_US09 09 MyDevices Test</h5>
+<span class='badge badge-success'>11.03.2022 11:19:23 pm</span>
+<span class='badge badge-danger'>11.03.2022 11:20:46 pm</span>
+<span class='badge badge-default'>00:01:23:808</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>US09-01 New_Bank: Create an account then add email as MFA device and delete it</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>US09-01 New_Bank: Create an account then add email as MFA device and delete it</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given Setup the Test Environment as "CHROME" and User opens the given URL "NEW_BANK"</span>
+      <div>User has opened the link:https://bank.ciam.sandbox.ciamsgo.com/ on CHROME browser.
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides access token to Deloitte security page for New Banking App</span>
+      <div>User is clicked on AccessThroughEntryToken
+      </div>
+      <div>User has provided Access Token
+      </div>
+      <div>User has received the Access to Deloitte
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User verifies the new bank site is accessible</span>
+      <div>New Bank Page has been appeared as expected
+      </div>
+      <div>Page URl is appeared as expected, URL:https://bank.ciam.sandbox.ciamsgo.com/
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on OpenAnAccount on new Bank app</span>
+      <div>User has clicked on Open An New Account
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User provides the account creation using "EMAIL" and submit</span>
+      <div>User has clicked on Sign-Up through Email MFA
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Given User provides "newbankregistrationviaemail@mailinator.com", "automation", "automation", "newbankregistrationviaemail", "positive" and password for Signup page of new Bank app</span>
+      <div>Registration via Email Page has been appeared as expected
+      </div>
+      <div>Registration via Email Page URL is verified as expected
+      </div>
+      <div>User has provided the Email address
+      </div>
+      <div>User has provided the FirstName
+      </div>
+      <div>User has provided the LastName
+      </div>
+      <div>User has provided the Username
+      </div>
+      <div>User has provided the password
+      </div>
+      <div>User has provided the confirm password
+      </div>
+      <div>User has enabled the T&C
+      </div>
+      <div>User has clicked on Register button
+      </div>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Select MFA Method']//following::*[contains(text(),'Select the authentication method you want to pair with your account.')] (tried for 35 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Utilities.WaitUtil.elementToBeLocated(WaitUtil.java:24)
+	at StepDefinitions.NewBank.NewBankRegistrationScreenSD.userProvidesAndPasswordForSignupPageOfNewBankApp(NewBankRegistrationScreenSD.java:232)
+	at ✽.User provides "newbankregistrationviaemail@mailinator.com", "automation", "automation", "newbankregistrationviaemail", "positive" and password for Signup page of new Bank app(file:///Users/navepilla/IdeaProjects/main-project/ciamsgo-cucumber-test-framework/src/test/java/Features/Banking/newUI/NewBankMyDevices.feature:13)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, findElement {using=xpath, value=//*[text()='Select MFA Method']//following::*[contains(text(),'Select the authentication method you want to pair with your account.')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at Utilities.WaitUtil.elementToBeLocated(WaitUtil.java:24)
+	at StepDefinitions.NewBank.NewBankRegistrationScreenSD.userProvidesAndPasswordForSignupPageOfNewBankApp(NewBankRegistrationScreenSD.java:232)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User feeds the test data of new Bank "newbankregistrationviaemail@mailinator.com", "automation", "automation", "positive" to csv file</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User should able to login with "automation" on new Bank app "positive"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User clicks on profile option on dashboard page of new Bank app</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User clicks on MyDevices tab in account details of new Bank app</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User verifies the myDevices page and clicks on add new email as a MFA source</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User should check inbox of "newbankregistrationviaemail@mailinator.com", get the OTP from Mailinator and provide the OTP to add MFA device and click on finish</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User verifies the availability of email MFA device</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User deletes the added MFA device</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User verifies there should not be any MFA device listed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User logs out from new Bank app "positive"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User terminates all windows of the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.NewBank.NewBankRegistrationScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.NewBank.NewBankRegistrationScreenSD.prepareFailureEvidence(NewBankRegistrationScreenSD.java:24)
+	at StepDefinitions.NewBank.NewBankRegistrationScreenSD.testScenarioCondition(NewBankRegistrationScreenSD.java:35)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.NewBank.NewBankProfileOptionsScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.NewBank.NewBankProfileOptionsScreenSD.prepareFailureEvidence(NewBankProfileOptionsScreenSD.java:26)
+	at StepDefinitions.NewBank.NewBankProfileOptionsScreenSD.testScenarioCondition(NewBankProfileOptionsScreenSD.java:37)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.NewBank.NewBankWelcomeScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.NewBank.NewBankWelcomeScreenSD.prepareFailureEvidence(NewBankWelcomeScreenSD.java:20)
+	at StepDefinitions.NewBank.NewBankWelcomeScreenSD.testScenarioCondition(NewBankWelcomeScreenSD.java:31)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.CommonDefinitions.DeloitteSecurityLayerSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.CommonDefinitions.DeloitteSecurityLayerSD.prepareFailureEvidence(DeloitteSecurityLayerSD.java:24)
+	at StepDefinitions.CommonDefinitions.DeloitteSecurityLayerSD.testScenarioCondition(DeloitteSecurityLayerSD.java:35)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.CommonDefinitions.GoogleOktaLoginSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.CommonDefinitions.GoogleOktaLoginSD.prepareFailureEvidence(GoogleOktaLoginSD.java:16)
+	at StepDefinitions.CommonDefinitions.GoogleOktaLoginSD.testScenarioCondition(GoogleOktaLoginSD.java:27)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.CommonDefinitions.FeedTestDataToFilesSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.CommonDefinitions.FeedTestDataToFilesSD.prepareFailureEvidence(FeedTestDataToFilesSD.java:19)
+	at StepDefinitions.CommonDefinitions.FeedTestDataToFilesSD.testScenarioCondition(FeedTestDataToFilesSD.java:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.CommonDefinitions.FacebookOktaLoginSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.CommonDefinitions.FacebookOktaLoginSD.prepareFailureEvidence(FacebookOktaLoginSD.java:17)
+	at StepDefinitions.CommonDefinitions.FacebookOktaLoginSD.testScenarioCondition(FacebookOktaLoginSD.java:28)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.CommonDefinitions.BrowserOperationsSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.CommonDefinitions.BrowserOperationsSD.prepareFailureEvidence(BrowserOperationsSD.java:15)
+	at StepDefinitions.CommonDefinitions.BrowserOperationsSD.testScenarioCondition(BrowserOperationsSD.java:26)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingTransferScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingTransferScreenSD.prepareFailureEvidence(BankingTransferScreenSD.java:16)
+	at StepDefinitions.Banking.BankingTransferScreenSD.testScenarioCondition(BankingTransferScreenSD.java:27)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingBrokerageAccountSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingBrokerageAccountSD.prepareFailureEvidence(BankingBrokerageAccountSD.java:14)
+	at StepDefinitions.Banking.BankingBrokerageAccountSD.testScenarioCondition(BankingBrokerageAccountSD.java:25)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingPaymentsSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingPaymentsSD.prepareFailureEvidence(BankingPaymentsSD.java:12)
+	at StepDefinitions.Banking.BankingPaymentsSD.testScenarioCondition(BankingPaymentsSD.java:23)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingWelcomeScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingWelcomeScreenSD.prepareFailureEvidence(BankingWelcomeScreenSD.java:15)
+	at StepDefinitions.Banking.BankingWelcomeScreenSD.testScenarioCondition(BankingWelcomeScreenSD.java:26)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingLoggedInScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingLoggedInScreenSD.prepareFailureEvidence(BankingLoggedInScreenSD.java:16)
+	at StepDefinitions.Banking.BankingLoggedInScreenSD.testScenarioCondition(BankingLoggedInScreenSD.java:27)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankTransfersSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankTransfersSD.prepareFailureEvidence(BankTransfersSD.java:12)
+	at StepDefinitions.Banking.BankTransfersSD.testScenarioCondition(BankTransfersSD.java:23)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingProfileOptionsSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingProfileOptionsSD.prepareFailureEvidence(BankingProfileOptionsSD.java:19)
+	at StepDefinitions.Banking.BankingProfileOptionsSD.testScenarioCondition(BankingProfileOptionsSD.java:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingSignUpEmailSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingSignUpEmailSD.prepareFailureEvidence(BankingSignUpEmailSD.java:16)
+	at StepDefinitions.Banking.BankingSignUpEmailSD.testScenarioCondition(BankingSignUpEmailSD.java:27)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Banking.BankingLoginScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Banking.BankingLoginScreenSD.prepareFailureEvidence(BankingLoginScreenSD.java:15)
+	at StepDefinitions.Banking.BankingLoginScreenSD.testScenarioCondition(BankingLoginScreenSD.java:26)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Retail.RetailOctaSignInSceenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Retail.RetailOctaSignInSceenSD.prepareFailureEvidence(RetailOctaSignInSceenSD.java:26)
+	at StepDefinitions.Retail.RetailOctaSignInSceenSD.testScenarioCondition(RetailOctaSignInSceenSD.java:37)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Retail.RetailWelcomeScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Retail.RetailWelcomeScreenSD.prepareFailureEvidence(RetailWelcomeScreenSD.java:21)
+	at StepDefinitions.Retail.RetailWelcomeScreenSD.testScenarioCondition(RetailWelcomeScreenSD.java:32)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Retail.RetailProfileOptionsScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Retail.RetailProfileOptionsScreenSD.prepareFailureEvidence(RetailProfileOptionsScreenSD.java:22)
+	at StepDefinitions.Retail.RetailProfileOptionsScreenSD.testScenarioCondition(RetailProfileOptionsScreenSD.java:33)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Retail.RetailSignUpScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Retail.RetailSignUpScreenSD.prepareFailureEvidence(RetailSignUpScreenSD.java:18)
+	at StepDefinitions.Retail.RetailSignUpScreenSD.testScenarioCondition(RetailSignUpScreenSD.java:29)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Retail.RetailLoginScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Retail.RetailLoginScreenSD.prepareFailureEvidence(RetailLoginScreenSD.java:23)
+	at StepDefinitions.Retail.RetailLoginScreenSD.testScenarioCondition(RetailLoginScreenSD.java:34)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Retail.RetailPrivacyWebFormScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Retail.RetailPrivacyWebFormScreenSD.prepareFailureEvidence(RetailPrivacyWebFormScreenSD.java:18)
+	at StepDefinitions.Retail.RetailPrivacyWebFormScreenSD.testScenarioCondition(RetailPrivacyWebFormScreenSD.java:29)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Health.HealthConfigureRegistrationSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Health.HealthConfigureRegistrationSD.prepareFailureEvidence(HealthConfigureRegistrationSD.java:14)
+	at StepDefinitions.Health.HealthConfigureRegistrationSD.testScenarioCondition(HealthConfigureRegistrationSD.java:25)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Health.HealthWelcomeScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Health.HealthWelcomeScreenSD.prepareFailureEvidence(HealthWelcomeScreenSD.java:15)
+	at StepDefinitions.Health.HealthWelcomeScreenSD.testScenarioCondition(HealthWelcomeScreenSD.java:26)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Health.HealthRegisterScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Health.HealthRegisterScreenSD.prepareFailureEvidence(HealthRegisterScreenSD.java:19)
+	at StepDefinitions.Health.HealthRegisterScreenSD.testScenarioCondition(HealthRegisterScreenSD.java:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Health.HealthLoginScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Health.HealthLoginScreenSD.prepareFailureEvidence(HealthLoginScreenSD.java:20)
+	at StepDefinitions.Health.HealthLoginScreenSD.testScenarioCondition(HealthLoginScreenSD.java:31)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>StepDefinitions.Health.HealthLoggedInHomeScreenSD.testScenarioCondition()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'USBGONAVEPILLA1', ip: '2409:4070:4798:d5:20d8:a013:7dd5:5565%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5809ba61d1bd58ab0040b8bc4bfa525, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/_r/ym2k45yj129...}, goog:chromeOptions: {debuggerAddress: localhost:64422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64422/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5809ba61d1bd58ab0040b8bc4bfa525
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at Utilities.CaptureScreen.takeScreenShot(CaptureScreen.java:9)
+	at StepDefinitions.Health.HealthLoggedInHomeScreenSD.prepareFailureEvidence(HealthLoggedInHomeScreenSD.java:26)
+	at StepDefinitions.Health.HealthLoggedInHomeScreenSD.testScenarioCondition(HealthLoggedInHomeScreenSD.java:40)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>Given User provides "newbankregistrationviaemail@mailinator.com", "automation", "automation", "newbankregistrationviaemail", "positive" and password for Signup page of new Bank app</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.Given User provides "newbankregistrationviaemail@mailinator.com", "automation", "automation", "newbankregistrationviaemail", "positive" and password for Signup page of new Bank app</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>28</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">28 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>28 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>StepDefinitions.NewBank.NewBankRegistrationScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.NewBank.NewBankRegistrationScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>StepDefinitions.NewBank.NewBankProfileOptionsScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.NewBank.NewBankProfileOptionsScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>StepDefinitions.NewBank.NewBankWelcomeScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.NewBank.NewBankWelcomeScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>StepDefinitions.CommonDefinitions.DeloitteSecurityLayerSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.CommonDefinitions.DeloitteSecurityLayerSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>StepDefinitions.CommonDefinitions.GoogleOktaLoginSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.CommonDefinitions.GoogleOktaLoginSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>StepDefinitions.CommonDefinitions.FeedTestDataToFilesSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.CommonDefinitions.FeedTestDataToFilesSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>StepDefinitions.CommonDefinitions.FacebookOktaLoginSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.CommonDefinitions.FacebookOktaLoginSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>StepDefinitions.CommonDefinitions.BrowserOperationsSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.CommonDefinitions.BrowserOperationsSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>StepDefinitions.Banking.BankingTransferScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingTransferScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='58'>StepDefinitions.Banking.BankingBrokerageAccountSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingBrokerageAccountSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>StepDefinitions.Banking.BankingPaymentsSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingPaymentsSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>StepDefinitions.Banking.BankingWelcomeScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingWelcomeScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='61'>StepDefinitions.Banking.BankingLoggedInScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingLoggedInScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>StepDefinitions.Banking.BankTransfersSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankTransfersSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>StepDefinitions.Banking.BankingProfileOptionsSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingProfileOptionsSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>StepDefinitions.Banking.BankingSignUpEmailSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingSignUpEmailSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>StepDefinitions.Banking.BankingLoginScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Banking.BankingLoginScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>StepDefinitions.Retail.RetailOctaSignInSceenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Retail.RetailOctaSignInSceenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>StepDefinitions.Retail.RetailWelcomeScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Retail.RetailWelcomeScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>StepDefinitions.Retail.RetailProfileOptionsScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Retail.RetailProfileOptionsScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>StepDefinitions.Retail.RetailSignUpScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Retail.RetailSignUpScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='70'>StepDefinitions.Retail.RetailLoginScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Retail.RetailLoginScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='71'>StepDefinitions.Retail.RetailPrivacyWebFormScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Retail.RetailPrivacyWebFormScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>StepDefinitions.Health.HealthConfigureRegistrationSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Health.HealthConfigureRegistrationSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>StepDefinitions.Health.HealthWelcomeScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Health.HealthWelcomeScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='74'>StepDefinitions.Health.HealthRegisterScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Health.HealthRegisterScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>StepDefinitions.Health.HealthLoginScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Health.HealthLoginScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>StepDefinitions.Health.HealthLoggedInHomeScreenSD.testScenarioCondition()</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it.StepDefinitions.Health.HealthLoggedInHomeScreenSD.testScenarioCondition()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@US09</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US09</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US09-01 New_Bank: Create an account then add email as MFA device and delete it</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US09-01 New_Bank: Create an account then add email as MFA device and delete it</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@add-and-delete-email-mfa</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@add-and-delete-email-mfa</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US09-01 New_Bank: Create an account then add email as MFA device and delete it</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US09-01 New_Bank: Create an account then add email as MFA device and delete it</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@new-bank</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@new-bank</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>US09-01 New_Bank: Create an account then add email as MFA device and delete it</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:19:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US09-01 New_Bank: Create an account then add email as MFA device and delete it</a>
+<div class="">
+<span class="badge badge-default">New_Bank_US09 09 MyDevices Test.US09-01 New_Bank: Create an account then add email as MFA device and delete it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 3, 2022 11:19:21 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 3, 2022 11:20:47 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='11%'><b>5</b> steps passed</small></div>
+<div>
+<small data-tooltip='64%'><b>29</b> steps failed,
+<b>11</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"New_Bank_US09 09 MyDevices Test":83.808
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@US09</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@add-and-delete-email-mfa</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@new-bank</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 5,
+failGrandChild: 29,
+warningGrandChild: 0,
+skipGrandChild: 11,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
