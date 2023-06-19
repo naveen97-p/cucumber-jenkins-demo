@@ -1,27 +1,21 @@
-# Created at 2022-11-04T06:11:51.022
-Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'file:///data/automationFiles/ciamsgo-cucumber-test-framework/src/test/java/Features/Banking/newUI/NewBankProfileItems.feature:28)'.
-
-# Created at 2022-11-04T06:17:54.238
-Corrupted channel by directly writing to native stream in forked JVM 1. Stream '/newUI/NewBankTransfers.feature:14)'.
-
-# Created at 2022-11-04T06:19:44.918
+# Created at 2023-06-19T11:36:03.441
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '/cucumber/environment-variables/      │'.
 
-# Created at 2022-11-04T06:19:44.922
+# Created at 2023-06-19T11:36:03.442
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│                                                                                   │'.
 
-# Created at 2022-11-04T06:19:44.924
+# Created at 2023-06-19T11:36:03.442
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ Disable this message with one of the following:                                   │'.
 
-# Created at 2022-11-04T06:19:44.928
+# Created at 2023-06-19T11:36:03.442
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│                                                                                   │'.
 
-# Created at 2022-11-04T06:19:44.932
+# Created at 2023-06-19T11:36:03.447
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │'.
 
-# Created at 2022-11-04T06:19:44.934
+# Created at 2023-06-19T11:36:03.448
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │'.
 
-# Created at 2022-11-04T06:19:45.018
+# Created at 2023-06-19T11:36:03.472
 Corrupted channel by directly writing to native stream in forked JVM 1. Stream '└───────────────────────────────────────────────────────────────────────────────────┘'.
 
