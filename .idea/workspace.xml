@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dcc5ef2-2287-4393-adf8-5a560b60af99" name="Changes" comment="Test commit">
+    <list default="true" id="4dcc5ef2-2287-4393-adf8-5a560b60af99" name="Changes" comment="Updated latest Linux Driver to start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/cucumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Configurations/FilePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Configurations/FilePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Configurations/SetUpDriverConfigurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Configurations/SetUpDriverConfigurations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BrowserInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BrowserInstance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/CommonDefinitions/DeloitteSecurityLayerSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/CommonDefinitions/DeloitteSecurityLayerSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/NewBank/NewBankProfileOptionsScreenSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/NewBank/NewBankProfileOptionsScreenSD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +82,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/navepilla/IdeaProjects/DevOpsConfiguration/ciamsgo-cucumber-test-framework/src/test/java/Features/JenkinsDemo",
+    "last_opened_file_path": "/Users/navepilla/IdeaProjects/DevOpsConfiguration/ciamsgo-cucumber-test-framework/Drivers",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -84,8 +91,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo" />
       <recent name="$PROJECT_DIR$/Drivers" />
+      <recent name="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo" />
       <recent name="$PROJECT_DIR$/src/test/java/Features/Banking/newUI" />
       <recent name="$PROJECT_DIR$/TestData" />
       <recent name="$PROJECT_DIR$/Resources" />
@@ -118,9 +125,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US03-01 Retail Google login Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: US03-01 Retail Google login Test (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Retail/RetailDemoGoogleLogin.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo/RetailDemoGoogleLogin.feature" />
       <option name="GLUE" value="StepDefinitions.Health StepDefinitions.Retail StepDefinitions.Banking StepDefinitions.CommonDefinitions StepDefinitions.NewBank" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ciam-sgo-automation-demo" />
@@ -138,17 +145,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JunitRunnerForHealthApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: US03-01 Retail Google login Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Retail/RetailDemoGoogleLogin.feature" />
+      <option name="GLUE" value="StepDefinitions.Health StepDefinitions.Retail StepDefinitions.Banking StepDefinitions.CommonDefinitions StepDefinitions.NewBank" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ciam-sgo-automation-demo" />
+      <option name="NAME_FILTER" value="^US03\-01 Retail Google login Test$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US03\-01 Retail Google login Test$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: US03-01 Retail Google login Test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestRunner.Health.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestRunner.Health" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner.Health.JunitRunnerForHealthApp" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,10 +198,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.JunitRunnerForJenkins" />
+        <item itemvalue="Cucumber Java.Scenario: US03-01 Retail Google login Test (1)" />
         <item itemvalue="JUnit.JunitRunnerForRetailApp" />
         <item itemvalue="Cucumber Java.Scenario: US03-01 Retail Google login Test" />
         <item itemvalue="Cucumber Java.Feature: RetailDemoGoogleLogin" />
-        <item itemvalue="JUnit.JunitRunnerForHealthApp" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687158952371</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated latest Linux Driver to start">
+      <created>1687236386830</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687236386831</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +272,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test commit" />
+    <MESSAGE value="Updated latest Linux Driver to start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated latest Linux Driver to start" />
   </component>
 </project>
