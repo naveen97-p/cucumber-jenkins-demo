@@ -8,6 +8,7 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 
@@ -225,5 +226,12 @@ public class RetailWelcomeScreenSD extends BrowserInstance {
         retailWelcomePage.clickOnDSARlink();
         scenario.log("Clicked on Do Not Sell My Data link");
 
+    }
+
+    @And("get the title of the Page as {string}")
+    public void getTheTitleOfThePageAs(String pageTitle) {
+            waitUtil.elementToBeLocated(retailWelcomePage.googleHomePageRefXpath,30);
+            scenario.log("Google Search button has appeared as expected");
+            Assert.assertEquals("Google Page Title isn't appeared as expected", pageTitle, driver.getTitle());
     }
 }

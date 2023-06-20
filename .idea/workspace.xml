@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dcc5ef2-2287-4393-adf8-5a560b60af99" name="Changes" comment="Updated latest Linux Driver to start">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/cucumber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Configurations/FilePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Configurations/FilePaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Configurations/SetUpDriverConfigurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Configurations/SetUpDriverConfigurations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/BrowserInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/BrowserInstance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/CommonDefinitions/DeloitteSecurityLayerSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/CommonDefinitions/DeloitteSecurityLayerSD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/NewBank/NewBankProfileOptionsScreenSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/NewBank/NewBankProfileOptionsScreenSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/rerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Retail/RetailWelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Retail/RetailWelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo/RetailDemoGoogleLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo/RetailDemoGoogleLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Retail/RetailWelcomeScreenSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Retail/RetailWelcomeScreenSD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/Retail/RetailWelcomeScreenSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/Retail/RetailWelcomeScreenSD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687236386831</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated latest Linux Driver to start">
+      <created>1687246113160</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687246113160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated latest Linux Driver to start">
+      <created>1687246176600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687246176601</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

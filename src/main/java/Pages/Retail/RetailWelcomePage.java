@@ -14,6 +14,7 @@ public class RetailWelcomePage extends BrowserInstance {
 
    public String profileButtonXpath="//button[@aria-label='account']";
    public String doNotSellMyDataDSARLinkXpath="//a[text()='Do Not Sell My Data']";
+   public String googleHomePageRefXpath="(//input[@type='submit' and @aria-label='Google Search'])[2]";
    public String signUpXpath="//*[text()='Sign Up']";
 
 
