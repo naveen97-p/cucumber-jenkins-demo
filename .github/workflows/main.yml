@@ -1,0 +1,24 @@
+name: Selenium GitHub Actions Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11' # Adjust the version as per your project requirements
+
+      - name: Build with Maven
+        run: mvn clean test -Dtest=TestRunner.JenkinsRunner.JunitRunnerForJenkins
+
+      # Add more steps here, such as deploying artifacts, sending notifications, etc.

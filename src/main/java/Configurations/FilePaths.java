@@ -3,7 +3,7 @@ package Configurations;
 public class FilePaths {
     private static final String currentDirectory = System.getProperty("user.dir");
     public static String CHROME_DRIVER_PATH = currentDirectory + "/Drivers/chromedriver114";
-    public static String CHROME_DRIVER_PATH_LINUX = currentDirectory + "/Drivers/chromedriverlinux";
+    public static String CHROME_DRIVER_PATH_LINUX = currentDirectory + "/Drivers/chromedriverlinux1";
     public static String CHROME_DRIVER_PATH_WINDOWS= currentDirectory+"Drivers/chromedriverwindows.exe";
     public static String FIREFOX_DRIVER_PATH = currentDirectory + "/Drivers/geckodriver";
     public static String SAFARI_DRIVER_PATH = currentDirectory + "/Drivers/safaridriver";
