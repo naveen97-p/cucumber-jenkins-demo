@@ -6,4 +6,5 @@ Feature: Retail_Demo_US03 Google Login Test US-0
   @simple-test
   Scenario: US03-00 Retail Google login Test
     And get the title of the Page as "Google"
+    And get the title of the Page as "Google"
     Then User terminates all windows of the browser
