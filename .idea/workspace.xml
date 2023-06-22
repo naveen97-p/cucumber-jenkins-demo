@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dcc5ef2-2287-4393-adf8-5a560b60af99" name="Changes" comment="Updated latest Linux Driver to start">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
+    <list default="true" id="4dcc5ef2-2287-4393-adf8-5a560b60af99" name="Changes" comment="Automated the 5 main User Stories for Google Login in my branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/cucumber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/rerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Retail/RetailWelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Retail/RetailWelcomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo/RetailDemoGoogleLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo/RetailDemoGoogleLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Retail/RetailWelcomeScreenSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Retail/RetailWelcomeScreenSD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/Retail/RetailWelcomeScreenSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/Retail/RetailWelcomeScreenSD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +25,11 @@
         <option value="NaveenKumarPilla &lt;pllnvnkmr9.9.97@gmail.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -44,12 +41,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1686892405" />
+                    <option name="branchName" value="code-changes-by-naveen" />
+                    <option name="lastUsedInstant" value="1687444142" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1686892404" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1686892405" />
                   </RecentBranch>
                 </list>
               </option>
@@ -83,17 +80,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/navepilla/IdeaProjects/DevOpsConfiguration/ciamsgo-cucumber-test-framework/Drivers",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "/Users/navepilla/IdeaProjects/DevOpsConfiguration/ciamsgo-cucumber-test-framework/src/test/java/Features/JenkinsDemo",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Drivers" />
       <recent name="$PROJECT_DIR$/src/test/java/Features/JenkinsDemo" />
+      <recent name="$PROJECT_DIR$/Drivers" />
       <recent name="$PROJECT_DIR$/src/test/java/Features/Banking/newUI" />
       <recent name="$PROJECT_DIR$/TestData" />
       <recent name="$PROJECT_DIR$/Resources" />
@@ -271,7 +268,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687246176601</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Automated the 5 main User Stories for Google Login">
+      <created>1687248965978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687248965979</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Automated the 5 main User Stories for Google Login">
+      <created>1687249004455</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687249004455</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Automated the 5 main User Stories for Google Login in my branch">
+      <created>1687444172450</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687444172451</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +306,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit" />
     <MESSAGE value="Updated latest Linux Driver to start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated latest Linux Driver to start" />
+    <MESSAGE value="Automated the 5 main User Stories for Google Login" />
+    <MESSAGE value="Automated the 5 main User Stories for Google Login in my branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automated the 5 main User Stories for Google Login in my branch" />
   </component>
 </project>
